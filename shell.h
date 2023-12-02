@@ -5,6 +5,6 @@
 #include <unistd.h>
 #include <stdlib.h>
 
-void _printf(const char *input);
+void _printf(const char *str);
 
 #endif /* SHELL_H */
