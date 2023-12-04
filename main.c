@@ -9,7 +9,7 @@ int main(void)
 {
 	while (1)
 	{
-		displayPromt();
+		displayPrompt();
 	}
 
 	retune(0);
