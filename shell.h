@@ -6,6 +6,6 @@
 #include <stdlib.h>
 
 void _printf(const char *str);
-void displayPrompt();
+void displayPrompt(void);
 
 #endif /* SHELL_H */

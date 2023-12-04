@@ -2,14 +2,16 @@
 
 /**
   * main - entry point to the code
-  *
+  * Return: Nothing
   */
 
-int main()
+int main(void)
 {
 	while (1)
 	{
 		displayPromt();
 	}
+
+	retune(0);
 }
 

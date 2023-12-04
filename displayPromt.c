@@ -4,7 +4,7 @@
   * displayPromt - function that prompt user for input
   */
 
-void displayPromt()
+void displayPromt(void)
 {
 	_printf("myShell-$ ");
 }
