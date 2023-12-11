@@ -1,4 +1,4 @@
-#include "sheel.h"
+#include "shell.h"
 
 /**
   * displayPromt - function that prompt user for input

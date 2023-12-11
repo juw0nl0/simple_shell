@@ -1,4 +1,4 @@
-#include "shell.c"
+#include "shell.h"
 
 /**
   * readCommand - function that read the user command from standard input
