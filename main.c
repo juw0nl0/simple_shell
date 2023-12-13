@@ -1,29 +1,33 @@
 #include "shell.h"
 
 /**
-  * main - entry point to the code
+  * main - entry point to the simple shell program
   * Return: Nothing
   */
 
 int main(void)
 {
+	char *line = NULL;
+	size_t len = 0;
+	ssize_t nread;
+
 	while (1)
 	{
-		displayPrompt();
-		char *command = readCommand();
+		printf("$ ");
+		nread = getline(&line, &len, stdin);
 
-		if (strcmp(command, "exit") == 0)
+		if (nread == -1)
 		{
-			free(command);  // Free the allocated memory
-			break;
+			printf("\n");
+			exit(EXIT_FAILURE);
 		}
+		line[nread - 1] = '\0';
 
-		char *args[10];  // Assuming a maximum of 10 arguments
-		parseCommand(command, args);
-		executeCommand(args);
-
-		free(command);
+		if (*line != '\0')
+		{
+			printf("%s\n", line);
+		}
 	}
-
-	return(0);
+	free(line);
+	return (0);
 }
