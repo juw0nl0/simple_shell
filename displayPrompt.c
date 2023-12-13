@@ -1,11 +1,11 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "shell.h"
 
 /**
-  * main- function that read an entire line of text from a file stream(stdin)
+  * displayPrompt- function that read an entire line
+  * of text from a file stream(stdin)
   * Return: character the user entered
   */
-int main(void)
+int displayPrompt(void)
 {
 	char *line = NULL;
 	size_t len = 0;
