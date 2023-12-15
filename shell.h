@@ -9,8 +9,8 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 
-int displayPrompt(void);
-char *readCommand();
+void displayPrompt(void);
+void readCommand(void);
 void parseCommand(char *command, char **args);
 
 

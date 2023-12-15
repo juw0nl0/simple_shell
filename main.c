@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	displayPrompt();
+	readCommand();
 
 	return (0);
 }
